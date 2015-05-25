@@ -1,0 +1,27 @@
+﻿<h1>Probabilty Calculator</h1>
+
+<div id="probabilities-calculator" class="row">
+	<div class="probabilities-form col-sm-4">
+		<div class="input-group">
+			<input type="number" class="form-control" placeholder="Probability 1" data-bind="value: value1" aria-describedby="basic-addon1">
+		</div>
+
+		<div class="input-group">
+			<input type="number" class="form-control" placeholder="Probability 2" data-bind="value: value2" aria-describedby="basic-addon1">
+		</div>
+	</div>
+	<div class="probabilities-calculation-options col-sm-4">
+		<button type="button" data-bind="click: calculateCombinedWith" class="btn btn-default">CombinedWith: P(A)P(B)</button>
+		<button type="button" data-bind="click: calculateEither" class="btn btn-default">Either:P(A) + P(B) - P(A)P(B)</button>
+	</div>
+
+	<div class="probabilities-calculation-result col-sm-4">
+		<div class="input-group">
+			<span class="input-group-addon" id="basic-addon1">Result</span>
+			<input type="number" data-bind="value: result" class="form-control" placeholder="Result" aria-describedby="basic-addon1" disabled>
+		</div>
+	</div>
+</div>
+
+
+
